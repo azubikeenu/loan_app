@@ -23,6 +23,8 @@ export const run = ( ui, alert ) => {
                 // render loader for 3 seconds
                 resultsView.showLoader( { monthlyPayment, totalPayment, totalInterest } )
 
+            } else {
+                alert.errorInComputation( "Please check your numbers" )
             }
 
         } else {
