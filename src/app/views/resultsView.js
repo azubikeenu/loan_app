@@ -42,6 +42,6 @@ export const showLoader = ( result ) => {
 }
 
 export const clearResult = () => {
-    // dont have time
+    // dont have time ! optimize later !!!
     DOMElements.results.innerHTML = "";
 }

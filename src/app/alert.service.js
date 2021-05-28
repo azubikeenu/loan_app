@@ -9,12 +9,12 @@ export default class AlertService {
                 message += "";
             } else {
                 if ( curr ) {
-                    message += `${curr} is not a valid number\n `;
+                    message += `\n${curr} is not a valid number`;
                 }
             }
             return message;
-        }, "Please enter only valid numbers\n" )
-        this.errorBox.textContent = fullMessage;
+        }, "Please enter only valid numbers" )
+        this.errorBox.innerText = fullMessage;
         this.errorBox.style.display = 'block'
         // hide after 3 seconds
         setTimeout( this.hideErrors, 3000 )
